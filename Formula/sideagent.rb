@@ -1,26 +1,26 @@
 class Sideagent < Formula
   desc "Run another coding agent from your current session"
   homepage "https://github.com/raine/sideagent"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-darwin-arm64.tar.gz"
-      sha256 "3fb69a39376ae710902370454cd4c156407d2763d5ed6a982f91eab674f6b2f6"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.7/sideagent-darwin-arm64.tar.gz"
+      sha256 "d10a462928596039641283d0345234b3e37ea7f3dc87ac70a23012c39ef515ed"
     else
-      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-darwin-amd64.tar.gz"
-      sha256 "27146d186c342acf68cc32c77ea36c6ee34e66b34aac713ab407f5ba2f09d3ab"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.7/sideagent-darwin-amd64.tar.gz"
+      sha256 "c59c69265119d0dfc0a0c7a698e83f919c4bf6a0a9395e1d0be8c314a3ea1534"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-linux-arm64.tar.gz"
-      sha256 "06692a8b4ce0be39ec67b08011456d3c9062e3d6ccd6afede89956ebca2006fd"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.7/sideagent-linux-arm64.tar.gz"
+      sha256 "8c9f8360c79e227d9ca5be44ae315eccf0f17065aafc4388893285fbc43de67a"
     else
-      url "https://github.com/raine/sideagent/releases/download/v0.1.6/sideagent-linux-amd64.tar.gz"
-      sha256 "4878f927da12e4e0a315b2fe18e663448e161ad4645c587dca6c2056c972a71a"
+      url "https://github.com/raine/sideagent/releases/download/v0.1.7/sideagent-linux-amd64.tar.gz"
+      sha256 "31e0e346a02c7bc37835e9d083e14ee9dc2b74924ab09db7c8710e76d2fcef3e"
     end
   end
 
